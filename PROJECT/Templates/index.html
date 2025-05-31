@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Emotion Detection</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #4CAF50;
+            margin-top: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 900px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            text-align: center;
+        }
+        img {
+            width: 100%;
+            max-width: 800px;
+            height: auto;
+            border-radius: 8px;
+        }
+        .loading {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            color: #f39c12;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Real-time Student Emotion Detection</h1>
+        <!-- Video Stream -->
+        <img src="{{ url_for('video') }}" alt="Real-time Emotion Detection">
+        
+        <!-- Loading Message -->
+        <div class="loading">Loading video stream...</div>
+    </div>
+
+</body>
+</html>
